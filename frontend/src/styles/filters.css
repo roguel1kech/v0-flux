@@ -1,0 +1,95 @@
+.modal-filters {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #030126;
+  z-index: 100;
+}
+
+.modal-filters.active {
+  display: block;
+}
+
+.modal-filters__content {
+  position: fixed;
+  width: 100%;
+  background-color: #020025;
+  border-radius: 20px 20px 0 0;
+  padding: 20px;
+  transform: translateY(20%);
+}
+
+.modal-filters.active .modal-filters__content {
+  transform: translateY(0);
+}
+
+.modal-filters__header h2 {
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-filters__header {
+  display: grid;
+  grid-template-columns: 300px 50px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.categories-filters {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  border-radius: 24px;
+  background-color: #0d0957;
+}
+
+.slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 33.33%; /* Ширина одного элемента */
+  background-color: #2a20e3;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.main-filter {
+  position: relative;
+  z-index: 1;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+.word-filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.word-filters span{
+  width: 100%;
+  padding: 20px 40px;
+  border: 1px solid;
+  border-color:  #ffffffd0 #ffffffd0 #ffffffa0 #ffffffa0;
+  border-radius: 8px;
+  background-color: #FFFFFF26;
+}
+
+.word-filter.active {
+  background-color: #ffffff8d;
+}
+
+
+.modal-filters__close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
